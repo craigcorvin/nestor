@@ -1,0 +1,291 @@
+input[type=file].fileupload {
+min-height: 0px;
+font-size: 16px;
+padding: 12px 10px 0px 10px;
+cursor: pointer;
+}
+
+.file-upload-cancel {
+position: absolute;
+top: 35px;
+right: 5px;
+}
+
+/* progress bar */
+
+.progressbar-container {
+position: relative;
+display: none;
+border-width: 1px;
+border-style: solid;
+border-color: #ccc;
+border-radius: 5px;
+moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+margin: 10px 0px;
+padding: 5px 10px;
+text-align: center;
+}
+
+.progressbar-title {
+padding: 0px 0px 5px 0px;
+}
+
+.progressbar-block {
+position: relative;
+display: block;
+width: 100%;
+}
+
+.progressbar-block-left {
+margin: 0px 80px 0px 0px;
+}
+
+.progressbar-block-right {
+position: absolute;
+right: 0px;
+top: 5px;
+}
+
+.progress-label {
+margin: 0px 0px 0px 0px;
+clear: both;
+}
+
+.progressbar-error {
+position: relative;
+display: none;
+color: #fff;
+text-align: center;
+font-size: 16px;
+margin: 0px 0px 20px 0px;
+padding: 10px 0px;
+border-radius: 5px;
+background: #e33;
+}
+
+.progressbar-success {
+position: relative;
+display: none;
+color: #fff;
+text-align: center;
+font-size: 16px;
+margin: 0px 0px 0px 0px;
+padding: 10px 0px;
+border-radius: 5px;
+background: #3c3;
+}
+
+.progressbar-queued {
+position: relative;
+display: none;
+color: #fff;
+text-align: center;
+font-size: 16px;
+margin: 0px 0px 0px 0px;
+padding: 10px 0px;
+border-radius: 5px;
+background: #3c3;
+}
+
+/* verify bar */
+
+.verifybar-container {
+position: relative;
+display: none;
+border-width: 1px;
+border-style: solid;
+border-color: #ccc;
+border-radius: 5px;
+moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+margin: 10px 0px;
+padding: 5px 10px;
+text-align: center;
+}
+
+.verifybar-title {
+padding: 0px 0px 5px 0px;
+}
+
+.verifybar-label {
+margin: 0px 0px 0px 0px;
+clear: both;
+}
+
+
+.ui-progressbar {
+background: #d3d3d3;
+}
+
+.ui-progressbar-header {
+border-color: #c33;
+background: #c33;
+}
+
+/* edit */
+
+.media-item {
+position: relative;
+}
+
+.media-edit-container {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: auto;
+}
+
+.media-edit-open {
+position: absolute;
+top: 0px;
+left: -20px;
+width: 18px;
+height: 18px;
+background: #efefef;
+border-radius: 9px;
+text-align: center;
+font-size: .9em;
+color: #333;
+cursor: pointer;
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+
+.media-edit-open:hover  {
+color: #666;
+}
+
+.media-edit-current {
+padding-right: 2px;
+background: #f0f8ff;
+border-radius: 10px 0px 0px 10px;
+}
+
+.media-edit-form {
+position: relative;
+display: none;
+padding: 10px;
+background: #f0f8ff;
+border-radius: 0px 10px 10px 10px;
+z-index: 100;
+}
+
+.media-edit-form.display-form {
+display: block;
+}
+
+/* comments type display */
+
+.user-image-media {
+position: absolute;
+display: block;
+top: 20px;
+left: 0;
+}
+
+.user-image-media img {
+width: 32px;
+height: 32px;
+border-radius: 5px;
+border-width: 1px;
+border-style: solid;
+border-color: #fff;
+}
+
+.media-group-container {}
+
+.indent-media {
+position: relative;
+padding: 0px 0px 0px 20px;
+}
+
+.media-row-content {
+position: relative;
+display: block;
+margin: 10px 0px 10px 50px;
+padding: 0px 10px 0px 10px;
+}
+
+.arrow-box {
+position: relative;
+background: #fff;
+border: 1px solid #d3d3d3;
+border-radius: 5px;
+}
+
+.arrow-box:after, .arrow-box:before {
+right: 100%;
+top: 35px;
+border: solid transparent;
+content: " ";
+height: 0;
+width: 0;
+position: absolute;
+pointer-events: none;
+}
+
+.arrow-box:after {
+border-color: rgba(255, 255, 255, 0);
+border-right-color: #fff;
+border-width: 10px;
+margin-top: -10px;
+}
+
+.arrow-box:before {
+border-color: rgba(239, 239, 239, 0);
+border-right-color: #d3d3d3;
+border-width: 11px;
+margin-top: -11px;
+}
+
+.arrow-box:hover {
+border-color: #999;
+}
+
+.arrow-box:hover:before {
+border-color: rgba(102, 102, 102, 0);
+border-right-color: #666;
+}
+
+.user-name-media {
+font-weight: 600;
+}
+
+.user-region-media {
+display: block;
+font-size: 12px;
+font-weight: 400;
+font-style: italic;
+clear: both;
+}
+
+.media-date {
+font-size: 12px;
+font-style: italic;
+float: right;
+}
+
+.media-timestamp {
+display: inline;
+height: 20px;
+border-radius: 10px;
+background: #fbfbfb;
+color: #333;
+margin: 10px 0px;
+padding: 0px 10px;
+text-align: center;
+line-height: 10px;
+font-size: 12px;
+cursor: pointer;
+}
+
+.media-timestamp:hover {
+background: #696969;
+color: #fff;
+}

@@ -1,0 +1,41 @@
+.notifier-type {
+margin: 0px 0px 20px 0px;
+padding: 10px;
+background-color: #efefef;
+}
+
+.notifier-type-item {
+clear: both;
+}
+
+.notifier-type-title {
+font-weight: bold;
+}
+
+.notifier-type-specific {
+padding: 10px 0px 0px 0px;
+font-size: 12px;
+}
+
+.notifier-type-component {
+padding: 10px 0px;
+font-family: italic;
+}
+
+.notifier-type-input {
+float: left;
+margin: 0px 20px 0px 0px;
+}
+
+.notifier-type-text {
+}
+
+.notifier-type-options {
+background-color: #fff;
+padding: 5px 10px 10px 10px;
+margin: 10px 0px 0px 0px;
+}
+
+.notifier-type-options-off {
+display: none;
+}

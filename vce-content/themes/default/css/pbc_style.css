@@ -1,0 +1,1293 @@
+/* pbc items container */
+.pbc-item-container, .accordion-container.accordion-open {
+position: relative;
+display: block;
+width: 100%;
+background-color: #fff;
+box-shadow: 1px 2px 5px 1px rgba(0,0,0,.07);
+border-radius: 5px;
+margin-bottom: 20px;
+}
+
+.accordion-container.accordion-open .accordion-content {
+border: none;
+}
+
+.pbc-item-header {
+position: relative;
+display: block;
+width: 100%;
+border-radius: 5px 5px 0px 0px;
+background-color: #F2F1F1;
+margin-top: 20px;
+height: 85px;
+}
+
+.coaching-partnership .pbc-item-header-sub {
+border: none;
+background-color: #F2F1F1;
+}
+
+.pbc-item-header h1, .pbc-item-header h2 {
+position: relative;
+left: 0;
+text-transform: uppercase;
+margin-left: 85px;
+font-size: 20px;
+padding: 30px 0;
+}
+
+
+/* PBC Cycle */
+.pbc-item-header .pbc-item-edit {
+width: 40px;
+height: 20px;
+background-color: #F2F1F1;
+position: relative;
+float: right;
+z-index: 10;
+box-shadow: 1px 1px 1px 2px rgba(0,0,0,.07);
+}
+
+.pbc-item-header .pbc-item-edit::after {
+content: "Edit";
+color: #000;
+}
+
+a.pbc-back-arrow {
+background-image: url("../images/go-back.svg");
+background-position: 3px 50%;
+background-repeat: no-repeat;
+background-size: 22px;
+position: absolute;
+z-index: 5;
+opacity: 1;
+top: 90px;
+margin-left: 20px;
+text-decoration-color: #0645AD;
+}
+
+a.pbc-back-arrow::after {
+font-size: 16px;
+color: #0645AD;
+margin-left: 35px;
+}
+
+.pbc-item-header.notifications a.pbc-back-arrow {
+position: absolute;
+display: block;
+top: 0px;
+left: 2px;
+width: calc(100% - 100px);
+height: 100%;
+z-index: 5;
+opacity: 1;
+background-image: none;
+}
+
+#digest-view input[type=submit] {
+display: block;
+position: absolute;
+top: -99px;
+right: 20px;
+margin: 0;
+}
+
+/* Digest */
+.digest-container .indent-left > .pbc-label .label-text {
+display: block;
+background-color: white;
+}
+
+.indent-left > .pbc-label.report-shared-goals .label-text {
+border-bottom: 2px solid #8B4298;
+}
+
+.indent-left > .pbc-label.report-action-plan-steps .label-text {
+border-bottom: 2px solid #1149a0;
+}
+
+.indent-left > .pbc-label.report-focused-observation .label-text {
+border-bottom: 2px solid #757821;
+}
+
+.indent-left > .pbc-label.report-shared-goals-completed .label-text {
+border-bottom: 2px solid green;
+}
+
+.indent-left > .pbc-label.report-action-plan-resources .label-text {
+border-bottom: 2px solid #B34289;
+}
+
+.label-message .digest-title, .label-message .digest-date {
+color: #333;
+}
+
+.label-message .digest-title {
+text-transform: uppercase;
+}
+
+.inner .digest-container .label-style {
+background-color: white;
+border: none;
+box-shadow: none;
+}
+
+
+/* Coaching Partnership */
+.inner .pbc-item-header.coaching-partnership {
+background-color: #DDA11D;
+background-image: url(../images/pbc-icons/high_five.svg);
+background-position: 20px 50%;
+background-repeat: no-repeat;
+background-size: 50px;
+color: #fff;
+position: relative;
+margin-bottom: 45px;
+height: 85px;
+}
+
+.pbc-item-header .pbc-item-edit.coaching-partnership {
+top: 20px;
+margin-right: 43px;
+}
+
+.pbc-item-header .pbc-item-edit.coaching-partnership:hover {
+background-color: white;
+}
+
+a.pbc-back-arrow.coaching-partnership::after {
+content: "Select a different partnership";
+}
+
+.plus-sign {
+color: #DDA11D;
+font-size: 32px;
+font-family: Lato-Bold;
+margin: 0 20px;
+}
+
+.pbc-item-header.coaching-partnership ~ .pbc-item-body .step-instructions-container {
+  display: block;
+}
+
+.pbc-item-header.coaching-partnership ~ .pbc-item-body .step-instructions-container.half-size-instructions {
+  display: none;
+}
+
+
+/* Supporting Documentation */
+.pbc-item-header.supporting-documentation {
+height: 45px;
+background-color: transparent;
+color: #137A7C;
+}
+
+.pbc-item-header.supporting-documentation h2, .pbc-item-header.supporting-documentation h1 {
+padding: 10px 0;
+margin-left: 20px;
+}
+
+.pbc-item-header .pbc-item-edit.supporting-documentation {
+top: 35px;
+float: right;
+margin-right: 83px;
+}
+
+.info-tooltip {
+top: 10px;
+position: absolute;
+right: 0;
+}
+
+.pbc-item-header.supporting-documentation ~ .pbc-item-body .pbc-item-hover:hover {
+background-color: #cfe8e2;
+border-color: #137A7C;
+}
+
+
+/* Shared Goals */
+.pbc-item-header.shared-goals {
+background-image: url("../images/pbc-icons/goal.svg");
+background-position: 20px 50%;
+background-repeat: no-repeat;
+background-size: 50px;
+color: #8B4298;
+}
+
+.pbc-item-header .pbc-item-edit.shared-goals {
+top: 20px;
+margin-right: 43px;
+}
+
+.pbc-item-each p.block-list-item-title {
+margin-top: 0px;
+}
+
+.pbc-label.shared-goals {
+margin-bottom: 15px;
+}
+
+.pbc-label.shared-goals > .pbc-label-body {
+display: inline-block;
+}
+
+.pbc-item-header.shared-goals ~ .pbc-item-body .pbc-item-hover:hover {
+background-color: #f0e3ff;
+border-color: #8B4298;
+}
+
+.pbc-back-arrow.shared-goals::after {
+content: "Select a different goal";
+}
+
+.block-list-item-date {
+font-size: 14px;
+}
+
+/* Competencies */
+.pbc-item-header.competencies {
+background-image: url("../images/pbc-icons/goal.svg");
+background-position: 20px 50%;
+background-repeat: no-repeat;
+background-size: 50px;
+color: #8B4298;
+}
+
+.pbc-item-header .pbc-item-edit.competencies {
+top: 20px;
+margin-right: 43px;
+}
+
+.pbc-item-each p.block-list-item-title {
+margin-top: 0px;
+}
+
+.pbc-label.competencies {
+margin-bottom: 15px;
+}
+
+.pbc-label.shared-goals > .pbc-label-body {
+display: inline-block;
+}
+
+.pbc-item-header.competencies ~ .pbc-item-body .pbc-item-hover:hover {
+background-color: #f0e3ff;
+border-color: #8B4298;
+}
+
+.pbc-back-arrow.competencies::after {
+content: "Select a different Competency";
+}
+
+.block-list-item-date {
+font-size: 14px;
+}
+
+
+/* Action Plan Steps */
+.pbc-item-header.action-plan-steps {
+background-image: url("../images/pbc-icons/steps.svg");
+background-position: 20px 50%;
+background-repeat: no-repeat;
+background-size: 50px;
+color: #1149a0;
+}
+
+.pbc-item-header .pbc-item-edit.action-plan-steps {
+top: 20px;
+margin-right: 43px;
+}
+
+.add-action-plan-step {
+cursor: pointer;
+}
+
+.pbc-item-header.action-plan-steps ~ .pbc-item-body .pbc-item-hover:hover {
+background-color: #dceaff;
+border-color: #1149a0;
+}
+
+.pbc-back-arrow.action-plan-steps::after {
+content: "Select a different action plan step";
+}
+
+
+/* Action Plan Resource */
+.pbc-item-header.action-plan-resource h2 {
+margin-left: 20px;
+color: #3c7cbe;
+}
+
+
+/* Focused Observation */
+.pbc-item-header.focused-observation h2 {
+margin-left: 20px;
+color: #757821;
+}
+
+.pbc-item-header.focused-observation > .pbc-item-edit.focused-observation {
+top: 20px;
+}
+
+
+/* Reflection and Feedback */
+.pbc-item-header.reflection-and-feedback h2 {
+margin-left: 20px;
+color: #bd3d00;
+}
+
+.pbc-item-header.reflection-and-feedback > .pbc-item-edit.reflection-and-feedback {
+top: 20px;
+margin-right: 10px;
+border-radius: 5px;
+padding: 3px 5px;
+text-align: center;
+font: 400 13px Arial;
+box-sizing: border-box;
+}
+
+.pbc-item-header.reflection-and-feedback > .pbc-item-edit.reflection-and-feedback:hover {
+cursor: pointer;
+background-color: white;
+}
+
+
+/* My Resources */
+button.resource-tag {
+margin: 10px 5px;
+border-radius: 30px;
+padding: 7px 15px;
+}
+
+div.resource-tag {
+margin: 5px 0 0 10px;
+font-size: 14px;
+}
+
+.remove-margin {
+margin: 0;
+}
+
+.page-info {
+font-family: sans-serif;
+font-size: 16px;
+padding: 20px;
+}
+
+
+/* Notifications */
+.pbc-item-header.notifications {
+background-color: #ce5025;
+color: white;
+background-image: url("../images/notifications.svg");
+background-size: 50px;
+background-position: 32px 50%;
+background-repeat: no-repeat;
+}
+
+.pbc-item-body.notifications-body .pbc-item-hover:hover {
+background-color: #ffc9bb;
+border-color: #ce5025;
+}
+
+.pbc-item-body.notifications-body .pbc-item-each-link:hover {
+background-image: url("../images/icon-view-black.png");
+color: #333;
+}
+
+.pbc-no-items {
+padding: 0px 0px 0px 15px;
+color: #333;
+}
+
+.pbc-item-body.notifications-body .pbc-item-each-link span {
+font-size: 14px;
+}
+
+.pbc-item-header.notifications h2 {
+margin-left: 95px;
+}
+
+/* NEW Notifications */
+.pbc-item-header.notifications {
+background-color: #ce5025;
+color: white;
+background-image: url("../images/notifications.svg");
+background-size: 50px;
+background-position: 32px 50%;
+background-repeat: no-repeat;
+}
+
+.each-notification-block {
+border-bottom: .5px solid lightgray;
+}
+
+.each-notification-block:hover {
+background-color: #ffc9bb;
+border-color: #ce5025;
+}
+
+a.each-notification-link {
+position: relative;
+display: inline-block;
+vertical-align: top;
+width: calc(100% - 70px);
+background-image: url("../images/icon-view-blue.png");
+background-position: 98% 50%;
+background-repeat: no-repeat;
+text-decoration: none;
+cursor: pointer;
+}
+
+a.each-notification-link:hover {
+background-image: url("../images/icon-view-black.png");
+color: #333;
+}
+
+.each-notification-content {
+font-size: 14px;
+padding: 20px 40px 20px 0px;
+}
+
+.each-notification-content.no-notification-content {
+font-size: 18px;
+padding: 40px;
+}
+
+.each-notification-subject {
+font-size: 18px;
+font-weight: bold;
+font-family: Lato-Bold;
+}
+
+.pbc-item-header.notifications h2 {
+margin-left: 95px;
+}
+
+/* Manage Groups */
+.pbc-item-header.manage-groups {
+background-color: #B34289;
+background-image: url("../images/manage-organizations.svg");
+background-size: 50px;
+background-position: 20px 50%;
+background-repeat: no-repeat;
+color: white;
+}
+
+.no-users-message {
+padding: 20px 0px 35px 20px;
+}
+
+.manage-groups .edit-cop-group {
+margin: 10px;
+}
+
+.manage-groups ~ .pbc-item-body {
+margin-top: 40px;
+}
+
+.pbc-item-header.manage-groups ~ .pbc-item-body > .add-padding:first-child {
+padding: 0 20px 10px 20px;
+}
+
+.pbc-item-header.manage-groups ~ .pbc-item-body .pbc-item-hover:hover {
+background-color: #f3eaef;
+border-color: #B34289;
+}
+
+
+/* Resource Library */
+.pbc-item-header.resource-library-header {
+background-color: #7a9900;
+background-image: url("../images/resources.svg");
+background-size: 50px;
+background-position: 20px 50%;
+background-repeat: no-repeat;
+color: white;
+}
+
+
+/* Shared Assets */
+.pbc-item-header.shared-assets {
+background-color: #F47B5E;
+background-image: url("../images/pbc-icons/shared_resources.svg");
+background-size: 50px;
+background-position: 20px 50%;
+background-repeat: no-repeat;
+color: white;
+margin-bottom: 50px;
+}
+
+.pbc-back-arrow.shared-assets::after {
+content: "Select a different shared resource";
+}
+
+.pbc-item-header .pbc-item-edit.shared-assets {
+top: 20px;
+margin-right: 43px;
+}
+
+.pbc-item-header.shared-assets ~ .pbc-item-body .pbc-item-hover:hover {
+background-color: #fbf0ed;
+border-color: #F47B5E;
+}
+
+.pbc-item-header.shared-assets ~ .pbc-item-body .add-padding {
+padding: 0 20px;
+}
+
+
+/* unassigned assets */
+.pbc-item-header.unassigned-assets {
+background-color: #1EBDC0;
+background-size: 50px;
+background-image: url("../images/my-resources.svg");
+background-position: 20px 50%;
+background-repeat: no-repeat;
+color: white;
+}
+
+.pbc-item-header.unassigned-assets ~ .pbc-item-body .pbc-item-hover:hover {
+background-color: #e2f0f1;
+border-color: #1EBDC0;
+}
+
+.pbc-back-arrow.unassigned-assets::after {
+content: "Select a different resource";
+}
+
+.unassigned-assets .pbc-item-edit.unassigned-assets {
+margin: 10px;
+}
+
+.pbc-item-each {
+position: relative;
+clear: both;
+}
+
+.pbc-item-each .file-icon {
+display: inline-block;
+vertical-align: middle;
+width: 50px;
+height: 100%;
+min-height: 80px;
+margin: 0px 10px 0px 10px;
+background-position: 50% 50%;
+background-repeat: no-repeat;
+}
+
+.pbc-item-each a.display-each-resource span {
+display: inline-block;
+padding: 0px;
+width: auto;
+position: absolute;
+margin-top: 11px;
+margin-right: 40px;
+}
+
+.pbc-item-each a.display-each-resource {
+display: block;
+width: 100%;
+height: 100%;
+background-image: url("../images/icon-view-blue.png");
+background-position: 98% 50%;
+background-repeat: no-repeat;
+text-decoration: none;
+}
+
+.pbc-item-each a.display-each-resource:hover {
+background-image: url("../images/icon-view-black.png");
+}
+
+.pbc-item-header.unassigned-assets ~ .pbc-item-body > .add-padding {
+padding: 20px 20px 10px 20px;
+}
+
+.pbc-item-each label .media-title {
+width: 88%;
+}
+
+
+/* item body */
+.pbc-item-body .pbc-item-each.pbc-item-hover {
+position: relative;
+display: block;
+padding: 20px 0;
+border-bottom: .5px solid lightgray;
+}
+
+.add-padding {
+padding: 40px;
+}
+
+.ua-tab-image  {
+display: none;
+}
+
+.pbc-item-body .pbc-item-each.remove-shadow {
+box-shadow: none;
+padding: 0 0 20px 0;
+margin: 0 40px;
+}
+
+.pbc-item-each.pbc-item-each-completed .pbc-item-each-link {
+min-height: 100px;
+background-image: url("../images/icon-checkmark-circle-green.png");
+background-position: 50% 50%;
+background-repeat: no-repeat;
+}
+
+a.pbc-item-each-link {
+position: relative;
+display: inline-block;
+vertical-align: top;
+width: calc(100% - 100px);
+margin: -10px 0px -10px 50px;
+padding: 0px 50px 0px 0px;
+background-image: url("../images/icon-view-blue.png");
+background-position: 98% 50%;
+background-repeat: no-repeat;
+text-decoration: none;
+cursor: pointer;
+}
+
+.pbc-item-each-link:hover {
+background-image: url("../images/icon-view-black.png");
+}
+
+a.pbc-item-each-link.pbc-item-no-sort {
+width: calc(100% - 70px);
+margin: 0px 0px 0px 20px;
+}
+
+.pbc-item-each-link span.media-icon {
+display: inline-block;
+background-position: 0% 50%;
+background-repeat: no-repeat;
+padding: 20px 0px 20px 70px;
+vertical-align: middle;
+}
+
+.coaching-partnership-title  {
+padding: 5px 0px;
+border-style: solid;
+border-width: 0px 0px 1px 0px;
+border-color: #999;
+}
+
+.pbc-item-body.notifications-body a {
+margin: 0px 0px 0px 30px;
+}
+
+
+/* pbc label */
+.pbc-label .label-text {
+display: none;
+}
+
+.pbc-label-body .coaching-partnership-members {
+margin: 20px 0px 40px 0px;
+}
+
+.pbc-label.coaching-partnership ~ .pbc-label.shared-goals .label-message {
+font-family: Lato-Bold;
+font-size: 18px;
+text-align: left;
+color: #8B4298;
+}
+
+
+/* Coaching Partnership Homepage */
+.pbc-item-body .pbc-item-each:last-child {
+border-color: white;
+}
+
+.pbc-item-header.coaching-partnership ~ .pbc-item-body > .pbc-item-hover a.pbc-item-each-link {
+margin: 0 0 0 10px;
+}
+
+.pbc-item-body.coaching-partnership-body .pbc-item-hover:hover, .pbc-item-header.coaching-partnership ~ .pbc-item-body > .pbc-item-hover:hover {
+background-color: #fff5e0;
+border-color: #DDA11D;
+}
+
+.pbc-item-body.coaching-partnership-body .pbc-item-each-link:hover {
+background-image: url("../images/icon-view-black.png");
+}
+
+.pbc-item-body.coaching-partnership-body a.pbc-item-each-link {
+margin: 0px 0px 0px 20px;
+}
+
+
+/* drag to create groups */
+.connected-sortable {
+min-height: 35px;
+}
+
+#default-members {
+position: relative;
+display: block;
+width: 100%;
+min-height: 60px;
+height: auto;
+padding: 10px;
+margin: 0;
+}
+
+.ui-state-default {
+position: relative;
+display: inline-block;
+background: #d3d3d3;
+border-width: 1px;
+border-style: solid;
+border-color: #d3d3d3;
+border-radius: 5px;
+padding: 5px;
+margin: 5px;
+}
+
+.connected-sortable .ui-state-default {
+background: #fbaf41;
+border-color: #fbaf41;
+}
+
+#default-members .ui-state-default, #coach-members .accepted-members {
+background: #d3d3d3;
+border-color: #d3d3d3;
+}
+
+#default-members .none-found {
+display: none;
+width: 98%;
+color: #999999;
+background: #fff;
+border-color: #fff;
+text-align: center;
+list-style-type: none; 
+}
+
+.remove-members, .remove-current-members {
+padding: 5px;
+cursor: pointer;
+color: red;
+}
+
+#between-ul {
+position: relative;
+display: block;
+width: 32px;
+height: 70px;
+text-align: center;
+font-size: 12px;
+margin: 0px auto 25px auto;
+}
+
+#between-ul #small-arrow {
+display: block;
+}
+
+#between-ul #large-arrow {
+position: absolute;
+display: block;
+top: -85px;
+left: -66px;
+z-index: 10;
+}
+
+.connected-sortable {
+position: relative;
+display: block;
+width: 100%;
+min-height: 60px;
+height: auto;
+padding: 10px;
+margin: 0;
+}
+
+
+/* interface */
+.pbc-members {
+position: relative;
+display: block;
+float: left;
+width: calc(100% / 3 - 6px);
+min-width: 0px;
+vertical-align: top;
+}
+
+.pbc-members.middle {
+margin: 0 3px;
+}
+
+
+/* action plan resources */
+.select-from-resource-library-form {
+padding: 10px 0px;
+width: 100%;
+}
+
+
+/* list users */
+.pbc-item-each > .coaching-partnership-members-padding {
+padding-bottom: 35px;
+padding-top: 0;
+}
+
+.coaching-partnership-members {
+margin: auto 15px;
+display: inline-block;
+padding: 15px;
+margin-left: 0;
+box-shadow: 1px 1px 8px 2px rgba(0,0,0,.07);
+border-radius: 5px;
+}
+
+.pbc-item-each-link > .coaching-partnership-members-padding > .coaching-partnership-members {
+box-shadow: none;
+padding: 5px 0 0 15px;
+}
+
+.coaching-partnership-members .title {
+text-transform: uppercase;
+color: #996F15;
+text-decoration: underline;
+padding-bottom: 5px;
+}
+
+.media-add-component .clickbar-title span {
+background: url('../images/add.png');
+background-repeat: no-repeat;
+background-size: contain;
+background-position: left;
+}
+
+
+/* action plan step edit */
+.each-step-container {
+position: relative;
+display: block;
+width: 100%;
+height: auto;
+}
+
+.step-number-container {
+position: absolute;
+display: block;
+top: 20px;
+left: 0px;
+width: 56px;
+padding: 0px 0px 10px 0px;
+background-color: #fbfbfb;
+border-width: 0px 1px 1px 0px;
+border-style: solid;
+border-color: #d3d3d3;
+border-radius: 5px 0px 0px 0px;
+}
+
+.step-plan-container {
+display: inline-block;
+width: calc(100% - 71px);
+margin: 0px 0px 0px 10px;
+}
+
+.step-plan-remove {
+position: absolute;
+top: -10px;
+right: -10px;
+width: 20px;
+height: 20px;
+font-size: 12px;
+line-height: 20px;
+text-align: center;
+border-width: 1px;
+border-style: solid;
+border-color: #d3d3d3;
+border-radius: 10px;
+background-color: #fbfbfb;
+cursor: pointer;
+}
+
+.step-plan-remove:hover {
+color: #fff;
+background-color: #999;
+}
+
+.textarea-left-margin {
+margin: 5px 0px -5px 60px;
+width: calc(100% - 80px);
+z-index: 20;
+}
+
+
+/* action plan steps and assets */
+.select-asset-type {
+position: relative;
+display: block;
+float: left;
+width: calc(50% - 5px);
+min-height: 50px;
+color: #fff;
+cursor: pointer;
+}
+
+.select-asset-type:hover {
+color: #fff;
+}
+
+.select-asset-type.action-plan-resource {
+margin: 0px 5px 0px 0px;
+background-color: #B34289;
+}
+
+.select-asset-type.focused-observation {
+margin: 0px 0px 0px 5px;
+background-color: #757821;
+}
+
+.select-asset-type h2 {
+font-size: 18px;
+}
+
+.pbc-status-button-container {
+display: block;
+margin: 10px 0px;
+}
+
+.pbc-status-button {
+color: #000;
+display: block;
+padding: 10px 10px 10px 40px;
+border-style: solid;
+border-width: 1px;
+border-color: #000;
+border-radius: 5px;
+background: url('../images/icon-checkbox-outline-gray.png');
+background-repeat: no-repeat;
+background-position: 10px 50%;
+background-color: #fff;
+cursor: pointer;
+}
+
+.pbc-status-button:hover {
+background: url('../images/icon-checkbox-gray.png');
+background-repeat: no-repeat;
+background-position: 10px 50%;
+}
+
+.pbc-status-button.completed {
+color: #fff;
+border-color: #588037;
+background: url('../images/icon-checkbox-white.png');
+background-repeat: no-repeat;
+background-position: 10px 50%;
+background-color: #588037;
+border-radius: 5px 5px 0px 0px;
+}
+
+.pbc-status-button.status-saved {
+border-radius: 5px 5px 5px 5px;
+}
+
+.pbc-status-button .status-message {
+display: none;
+}
+
+.pbc-status-button .status-message.completed {
+display: inline;
+}
+
+.pbc-cycle-summary, .pbc-next-step {
+display: none;
+padding: 10px;
+border-style: solid;
+border-width: 0px 1px 1px 1px;
+border-color: #717372;
+border-radius: 0px 0px 5px 5px;
+}
+
+.pbc-cycle-summary.completed, .pbc-next-step.completed {
+display: block;
+}
+
+
+/* focused observation */
+.create-focused-observation-form {
+margin: 15px 0px 0px 0px;
+}
+
+
+/* action plan item */
+.pbc-asset {
+display: inline-block;
+float: left;
+width: 24px;
+height: 24px;
+margin: 15px 10px 0px 0px;
+}
+
+.pbc-asset.action-plan-resource {
+background: url('../images/icon-small-action-plan-resource.png');
+background-repeat: no-repeat;
+background-position: 50% 50%;
+}
+
+.pbc-asset.focused-observation {
+background: url('../images/icon-small-focused-observation.png');
+background-repeat: no-repeat;
+background-position: 50% 50%;
+}
+
+
+/* sort item */
+.sort-item-container {
+position: absolute;
+display: block;
+top: 0px;
+left: 0px;
+width: 50px;
+height: 100%;
+}
+
+.sort-item-up {
+position: relative;
+display: block;
+width: 50px;
+height: 50%;
+background: url('../images/icon-up-arrow-blue.png');
+background-repeat: no-repeat;
+background-position: left bottom;
+cursor: pointer;
+}
+
+.sort-item-up:hover {
+background: url('../images/icon-up-arrow-black.png');
+background-repeat: no-repeat;
+background-position: left bottom;
+}
+
+.sort-item-down {
+position: relative;
+display: block;
+width: 50px;
+height: 50%;
+background: url('../images/icon-down-arrow-blue.png');
+background-repeat: no-repeat;
+background-position: left top;
+cursor: pointer;
+}
+
+.sort-item-down:hover {
+background: url('../images/icon-down-arrow-black.png');
+background-repeat: no-repeat;
+background-position: left top;
+}
+
+
+/* status completed */
+.status-completed {
+background: url('../images/icon-checkbox-outline-green.png');
+background-repeat: no-repeat;
+color: #588037;
+padding: 0px 0px 10px 30px;
+}
+
+
+/* step instructions */
+.instructions-container:before {
+position: absolute;
+display: block;
+content: ' ';
+bottom: 139px;
+right: 10px;
+width: 0;
+height: 0;
+border-bottom: 15px solid #3c7cbe;
+border-left: 20px solid transparent;
+}
+
+.instructions-container {
+display: none;
+min-height: 100px;
+width: 75%;
+border-radius: 5px;
+background-color: #3c7cbe;
+color: #fff;
+position: absolute;
+top: 58px;
+right: 30px;
+z-index: 11;
+padding: 20px;
+font-family: Lato;
+}
+
+.instructions-title {
+font-family: Lato-Bold;
+margin-bottom: 5px;
+}
+
+.supporting-documentation-instructions, .shared-goals-instructions, .action-plan-steps-instructions, .action-plan-resource-instructions, .focused-observation-instructions {
+font-size: 16px;
+margin-left: 5%;
+top: 65px;
+min-height: none;
+}
+
+.step-instructions-container, .step-number {
+display: none;
+}
+
+.step-instructions-container::after {
+clear: both;
+}
+
+
+/* homepage */
+.homepage-button {
+display: block;
+width: auto;
+height: 65px;
+padding: 15px;
+padding-right: 25px;
+border-radius: 5px;
+cursor: pointer;
+text-decoration: none;
+border: none;
+background-color: #F2F1F1;
+text-transform: uppercase;
+background-repeat: no-repeat;
+text-align: left;
+margin: 0 auto;
+margin-bottom: 30px;
+background-size: 45px;
+}
+
+.new-coaching-partnership-link {
+color: #996F15;
+background-image: url("../images/pbc-icons/cycle.svg");
+background-position: 24px 50%;
+}
+
+.new-coaching-partnership-link:hover {
+color: #DDA11D;
+}
+
+.upload-new-resource {
+color: #3c7cbe;
+background-image: url("../images/upload_arrow.svg");
+background-position: 25px 50%;
+}
+
+.upload-new-resource:hover {
+color: #0780fd;
+}
+
+.new-coaching-partnership-link > .block-list-item-title, .upload-new-resource > .block-list-item-title {
+font-size: 16px;
+display: inline-block;
+}
+
+.new-coaching-partnership-link > .block-list-item-title:first-of-type, .upload-new-resource > .block-list-item-title:first-of-type {
+margin-left: 70px;
+}
+
+.coaching-partnerships-link .main-container .coaching-partnership {
+margin-bottom: 0;
+background-position: 30px 50%;
+}
+
+.coaching-partnerships-link .main-container .coaching-partnership h2{
+margin-left: 95px;
+}
+
+.open-app-button {
+  display: none;
+}
+
+@media only screen and (max-width: 1050px) {
+  .coaching-partnerships-link .main-container .coaching-partnership h2, .pbc-item-header.notifications h2 {
+  font-size: 16px;
+  }
+
+  .block-list-item-title {
+  font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 975px) {
+  .new-coaching-partnership-link > .block-list-item-title, .upload-new-resource > .block-list-item-title {
+  margin-left: 70px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .pbc-item-each label .media-title {
+  width: 75%;
+  }
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (max-width: 650px) {
+  /* .media-add-component {
+    display: none;
+  }
+
+  .open-app-button {
+    display: block;
+    width: 100%;
+    height: 49px;
+    font-size: 18px;
+  } */
+
+  .homepage-button {
+  width: 100%;
+  margin-bottom: 10px;
+  background-position: 20px 50%;
+  }
+
+  .new-coaching-partnership-link > .block-list-item-title:first-of-type, .upload-new-resource > .block-list-item-title:first-of-type {
+  margin-left: 70px;
+  }
+
+  .pbc-item-each label .media-title {
+  width: 70%;
+  }
+
+  .coaching-partnership-members {
+    margin: 0;
+  }
+
+  #digest-view input[type=submit] {
+    top: -160px;
+    right: 7px;
+  }
+
+  .info-tooltip.link-button {
+    top: -27px;
+    right: -10px;
+  }
+
+  .instructions-container {
+    top: 0;
+  }
+
+  .main-container .pbc-item-header .pbc-item-edit {
+    margin-right: 8px;
+  }
+
+  #main_content .main-container .pbc-item-header {
+    background-position: 15px 50%;
+  }
+
+  .plus-sign {
+    margin: 0 10px;
+  }
+
+  .search-input {
+    width: 125px;
+  }
+}
+
+
+

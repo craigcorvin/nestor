@@ -1,0 +1,113 @@
+/* select specific updates */
+
+.connected-sortable .ui-state-default, .select2-container--default .select2-selection--multiple .select2-selection__choice {
+color: #fff;
+background-color: #A52773;
+border-color: #A52773;
+}
+
+.remove-members, .remove-current-members, .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+width: 16px;
+height: 16px;
+color: transparent;
+/* background-image: url("../images/icon-trash-white.png"); */
+background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACpQTFRFpid0////6cnc05O6vF2Xx3io47zUwmufsUKF3q7LrDV97tflt1CO+fL2optSqAAAAEhJREFUeNpiYCAEOJjBAEOci5sRDDiRBZkZ0QALIQlWJjTAQ9BFDMzIgBVJAsUGplEJfBK8yBJsuOKQHTncEXHFxkIgigACDABEtgHUm5VyfwAAAABJRU5ErkJggg==");
+background-repeat: no-repeat;
+background-size: 100%;
+background-position: 50% 50%;
+margin: 0px 5px 0px 0px;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+background-size: 80%;
+margin: 0px 0px 0px -5px;
+}
+
+.remove-members:hover, .remove-current-members:hover, .select2-container--default .select2-selection--multiple .select2-selection__choice__remove:hover {
+color: transparent;
+/* background-image: url("../images/icon-trash-black.png"); */
+background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACpQTFRFpid0BAcHLQ8iVRc+aRtLfh9ZNxEpIg0biCFgDgkOQRMwkiNmnCVtcx1SShopewAAAEhJREFUeNpiYCAEuJnBAEOch50RDLiQBZkZ0QArIQkWJjTAQdBFDMzIgAVJAsUGplEJfBKcyBJsuOKQFzncEXHFxkogigACDABCVQHUO+AA2wAAAABJRU5ErkJggg==");
+}
+
+
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+background-color: transparent;
+border: none;
+}
+
+.select2-container--default .select2-selection--multiple {
+background-color: transparent;
+border: none;
+}
+
+.select2-results {
+background-color: #fff;
+}
+
+.select2-container--default .selection {
+width: 100%;
+}
+
+.select2-container--default .select2-results > .select2-results__options {
+margin: -16px 0px 0px 0px;
+}
+
+.popup {
+position: absolute;
+width: 250px;
+padding: 0px;
+background: #fff;
+color: #333;
+border-radius: 5px;
+-webkit-box-shadow: 2px 4px 7px 1px rgba(0,0,0,0.4);
+-moz-box-shadow: 2px 4px 7px 1px rgba(0,0,0,0.4);
+box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.4);
+top: 25px;
+left: -3px;
+cursor: default;
+z-index: 40;
+list-style-type: none;
+}
+
+.move-to {
+padding: 10px;
+}
+
+.move-to:focus, .move-to:hover {
+background: #fbaf41;
+border-radius: 5px;
+}
+
+input[type=text].search-input {
+padding: 0px 10px 0px 10px;
+}
+
+.between-ul .small-arrow {
+display: block;
+width: 32px;
+height: 70px;
+background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAABGCAYAAACt15azAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAArVJREFUeNrkmdFt2zAQhhnB73UnSDaIOkHUTqBMEHWCaIOoE9SZoPYEURZorAmiTFB5gjjvBdxjegIYhRZ5xyOIogQIBXZIfv55dzyeTg6Hg5q23+2XBh4F9Fb3RflzUJHayREAveCp8VEHfQ0g6+gAsHgFjx9H/n8HfYUwewmAzPJZPfP/WpXv0AcArcUVgEn1vj8QxmtFKlBjKwWgJ7pgzHOPIHs2ACx+Bo9fAWqy1DBtoAncTm0fD1TbeFUABi3h72dB79qAEhVFgVrYva/gR61TAnhDZBh4PkSKtE4IrYC2/hcVr13NGabphiU8xh5Dkc82F7WdBUuEaCYHUmjTcSKfBivraTg5mCRBbgGg9gYwQGoEkdiaTwDRz52G7xoMWKGxdgIAK7IClmzpRkqFjDoSBmqAr4EANVsBz8zJp33UHpFxR2N+GKJEydoCC8RtMgCE0Pv5xBhaBNnAxB5yeDxyvCET8GuFLrVhDD0TAQhI6XIxALy+3adUQOFd8p8CUKIAeNZ3yQCwbVMD9KkBSPdDkUhoiYy+k3YxFCDZS2oA9d8rMKQEeNHnRxbBA5aUeBFDgZwSMWMALFMD5J77nxRgGzMO+AC0UQCw1niaDGDM9R1tYxYpUgC0Mc+C0vH9Dn79G4BFwE1I+/t+vOdjkctVQVm/yyM9FitQ2gIXPTe+/makYKUH+4oMoP6WZm48XK6kGB/FBgZX2PWstjashMRR/x9fblSu3O/YmzdfL9jN2Eil3G9ZmtCUrA+4FXdzKkoAuEJvLZGU9szAtDHiRI41RvrFJKAEc4nxozSUelM19y3VchW4g3492aaCexY8KZnGBhiEAC64AL0QwHi+pAMwtyHFFnTmXKT6AOHePzVe7XatLSIuGJOdey742l1v1KkAgwWAtGAoQI8JCnvBafsjwACimCJ7SmZ0owAAAABJRU5ErkJggg==");
+}
+
+.between-ul {
+position: relative;
+display: block;
+width: 32px;
+height: 70px;
+text-align: center;
+font-size: 12px;
+margin: 0px auto 25px auto;
+}
+
+/*
+
+id="selected-users"
+id="selected-user-container"
+class="select-user-button link-button"
+<div id="between-ul">
+<img id="small-arrow"
+<ul id="group-members" class="connected-sortable">
+ui-state-default accepted-members
+remove-current-members
+
+*/

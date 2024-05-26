@@ -1,0 +1,23 @@
+/* comments type display */
+
+.indent-media {
+position: relative;
+display: block;
+padding: 0px 0px 20px 50px;
+}
+
+
+.user-image-media {
+position: absolute;
+display: block;
+top: 0px;
+left: 0;
+}
+
+.media-row-content {
+padding: 0px 10px;
+}
+
+.media-row-content .link-button {
+width: 100% !important;
+}

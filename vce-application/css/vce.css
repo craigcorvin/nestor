@@ -1,0 +1,27 @@
+.form-message, .vce-error-message {
+position: relative;
+display: block;
+color: #fff;
+text-align: center;
+font-size: 16px;
+margin: 0px 0px 20px 0px;
+padding: 10px 0px;
+}
+
+/* error */
+
+.form-error, .vce-error-message {
+background-color: #e33;
+}
+
+/* success */
+
+.form-success {
+background-color: #3c3;
+}
+
+/* warning */
+
+.form-warning {
+background-color: #fbaf41;
+}
