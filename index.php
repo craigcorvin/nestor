@@ -6,10 +6,6 @@ header("Expires: -1");
 header("X-XSS-Protection: 1; mode=block");
 header("X-Content-Type-Options: nosniff");
 
-// application page-build-timer start
-// $mtime = explode(" ",microtime()); 
-// $starttime = $mtime[1] + $mtime[0]; 
-
 // Define BASEPATH as this file's directory
 define('BASEPATH', dirname(__FILE__) . '/');
 
